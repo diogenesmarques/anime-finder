@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime info finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/16821822f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-info bg-gradient shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-white fs-2">Anime info finder</span>
+            
+        </div>
+    </nav>
+    <br/>
+    <div class="container">
+        <div class="align-middle form-floating mb-3">
+            <input type="text" class="form-control" id="search-input" placeholder="Enter the name of the anime you're looking for.">
+            <label for="search-input">Enter the name of the anime you're looking for.</label>
+          </div>
+          <div class="d-grid gap-2">
+            <button id="search-btn" class="btn btn-info text-white fw-bold" type="button">Search</button>
+          </div>
+          <br/>
+          <div id="results">
+        
+          </div>
+    </div>
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
