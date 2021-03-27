@@ -17,17 +17,14 @@ async function searchAnime(){
     const RESULTS = await SEARCH.results;
     RESULTS.length = 16;
 
-    console.log(RESULTS);
-
     DOM_RESULT.innerHTML = await RESULTS.map(anime => {
         return (`<div id="${anime.id}" class="result border bg-light">
         <img src="${anime.image_url}">
         <div id ="result-text">
-          <h6>${anime.title}</h6>
+          <h6 class="title" id="${anime.id}">${anime.title}</h6>
           <i class="far fa-star"> </i> ${anime.score}<br/>
           <p>${anime.synopsis}</p>
         </div>
       </div>`)
-    }).join("")
-
+    }).join("");
 }
